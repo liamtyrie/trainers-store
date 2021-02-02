@@ -1,0 +1,44 @@
+{
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.14",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.7"
+  },
+  "name": "shu-72",
+  "version": "1.0.0",
+  "description": "Shu-72 is an online ecommerce project, that specialises in selling trainers. Built upon the MERN stack.",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/liamtyrie/shu-72.git"
+  },
+  "keywords": [
+    "MERN",
+    "JS",
+    "REACT",
+    "CSS"
+  ],
+  "author": "Liam Tyrie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liamtyrie/shu-72/issues"
+  },
+  "homepage": "https://github.com/liamtyrie/shu-72#readme"
+}
